@@ -1,11 +1,3 @@
----
-layout: post
-title: "Taming your Grails front-end code with Grunt"
-date: 2014-07-06 11:07
-comments: true
-categories: 
----
-
 So I'm once again working on a [Grails](http://grails.org) project, and as usual, we're using yet another new method for pre-processing and packaging CSS etc. First Grails gig I was on, we used the JAWR plugin. Next time round, everything had moved on and we were all using the Resources plugin. Now everybody's decided that's not good enough, and it's now all about the asset pipeline plugin. Additionally, I work with SASS, and the asset pipeline plugin for Grails that compiles SASS is an absolute abomination. Booting up JRuby and installing/running gems to compile the Sass? Please! How much more complexity do we need to turn a text file from one format to another, and make it squishy? To say nothing of the fact that it randomly just stops working now and again, with lovely JRuby-flavoured stacktraces.
 
 Enough is enough. There are some awesome front-end tools around, and I'm going to use them. Specifcally, I'm going to use Grunt to compile my SASS.
