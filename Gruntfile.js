@@ -20,12 +20,26 @@ module.exports = function(grunt) {
                 files: 'grails-app/assets/stylesheets/scss/**/*.scss',
                 tasks: ['sass']
             }
+        },
+        bower: {
+            install: {
+                options: {
+                    cleanTargetDir: true,
+                    cleanBowerDir: true,
+                    targetDir: 'web-app/js/lib',
+                    layout: function(type, component) {
+                        return '';
+                    }
+                }
+            }
         }
     });
 
     grunt.loadNpmTasks('grunt-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-bower-task');
 
     grunt.registerTask('build', ['sass']);
+    grunt.registerTask('bootstrap', ['bower:install']);
     grunt.registerTask('default', ['build','watch']);
 }

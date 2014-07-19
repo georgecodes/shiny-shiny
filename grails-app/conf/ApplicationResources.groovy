@@ -1,5 +1,7 @@
 modules = {
-    application {
-        resource url:'js/application.js'
+
+    jquery {
+        resource url: 'js/lib/jquery.js'
     }
+
 }

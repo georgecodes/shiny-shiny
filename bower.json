@@ -1,0 +1,24 @@
+{
+  "name": "shiny-shiny",
+  "version": "0.0.0",
+  "homepage": "https://github.com/georgecodes/shiny-shiny",
+  "authors": [
+    "George McIntosh <george@georgecodes.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.9.1"
+  },
+    "exportsOverride": {
+      "jquery": {
+          "js": "jquery.js"
+      }
+    }
+}
