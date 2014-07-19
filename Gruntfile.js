@@ -8,7 +8,7 @@ module.exports = function(grunt) {
                     outputStyle: 'compressed'
                 },
                 files: {
-                    'web-app/css/main.css': 'grails-app/assets/stylesheets/scss/main.scss'
+                    'web-app/css/main.css': 'web-app/scss/main.scss'
                 }
             }
         },
@@ -17,7 +17,7 @@ module.exports = function(grunt) {
             grunt: { files: ['Gruntfile.js'] },
 
             sass: {
-                files: 'grails-app/assets/stylesheets/scss/**/*.scss',
+                files: 'web-app/scss/**/*.scss',
                 tasks: ['sass']
             }
         },
